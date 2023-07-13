@@ -1,3 +1,9 @@
+/*
+*Problem Statement:
+*   Write a program which accept file name from user and open that file.
+*/
+
+
 #include<stdio.h>// For printf
 #include<fcntl.h> //for file mode definations(MACROS)
 #include<unistd.h> //for close system call

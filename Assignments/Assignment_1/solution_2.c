@@ -1,3 +1,8 @@
+/*
+*Problem Statement:
+*   Write a program which accept file name and mode from user and open that file in specified mode.
+*/
+
 #include<stdio.h>// for printf
 #include<fcntl.h>//for mode defination
 #include<string.h> // for strcmp
