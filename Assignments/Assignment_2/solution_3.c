@@ -1,5 +1,7 @@
 /*
-*Write a program which accept directory name from user and print all file names from that directory.
+*Problem Statement:
+*       Write a program which accept directory name from user and
+*       print all file names from that directory.
 */
 
 #include<stdio.h>
