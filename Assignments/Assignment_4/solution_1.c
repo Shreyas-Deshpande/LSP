@@ -18,3 +18,6 @@ int main(int argc, char* argv[]){
 
     return 0;
 }
+
+//Exewcution command
+// ./solution_1 <Input.txt >Output.txt
