@@ -1,0 +1,2 @@
+This is Input file. Generally this file should contains the Input parameters that has to be
+feed to the executable file.

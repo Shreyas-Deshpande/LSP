@@ -1,0 +1,16 @@
+Hello this is test file.
+You can enter any dat in this file,
+for testing purpose.
+
+following few lines explains the return value of memcmp fucntion
+
+ The memcmp() function returns an integer less than, equal to, or
+greater than zero if the first n bytes of s1 is found,
+respectively, to be less than, to match, or be greater than the
+first n bytes of s2.
+
+For a nonzero return value, the sign is determined by the sign of
+the difference between the first pair of bytes (interpreted as
+unsigned char) that differ in s1 and s2.
+
+If n is zero, the return value is zero.
