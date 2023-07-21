@@ -25,6 +25,13 @@ int main(int argc, char* argv[]){
     }
 
     lseek(fd,0,SEEK_END);
+    /*
+    The hoel at end can be achieved using trucate system call as shown bellow
+
+        ftruncate(fd,(file_Size+BLOCKSIZE));
+
+        for this we need to create stat structure object to fetch the file_size
+    */
 
    Ret = write(fd,Buff,sizeof(Buff));
 

@@ -1,0 +1,18 @@
+The MC34063A Series is a monolithic control circuit containing the
+primary functions required for DC−to−DC converters. These devices
+consist of an internal temperature compensated reference, comparator,
+controlled duty cycle oscillator with an active current limit circuit,
+driver and high current output switch. This series was specifically
+designed to be incorporated in Step−Down and Step−Up and
+Voltage−Inverting applications with a minimum number of external
+components. Refer to Application Notes AN920A/D and AN954/D
+for additional design information.
+The input source type selection (SEL) pin is used to
+select the input power source for the input current limit
+control feature. With the SEL input high, the
+MCP73871 device is capable of providing 1.65 (typical)
+total amperes to be shared by the system load and Li-
+Ion battery charging. The MCP73871 device limits the
+input current up to 1.8A. When SEL active-low, the
+input source is designed to provide system power and
+Li-Ion battery charging from a U
