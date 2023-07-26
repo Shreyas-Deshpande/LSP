@@ -21,6 +21,7 @@ int main(int argc, char* argv[]){
         return -1;
     }
 
+    /* Need to give the absolute path of dynamic library, relative path will not work*/
     ptr = dlopen("/home/shreyas//Documents/LSP/Assignments/Assignment_7/Solution_1/mathlib.so",RTLD_LAZY);
     if(ptr == NULL)
     {
