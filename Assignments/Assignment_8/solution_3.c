@@ -22,7 +22,7 @@ int main()
             return 0;
         }
         else{
-            printf("This is main porcess\n");
+            printf("This is main porcess. PID: %d\n",getpid());
         }
     }
 
