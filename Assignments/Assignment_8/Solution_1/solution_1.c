@@ -10,7 +10,7 @@
 #include<sys/types.h>
 
 int main(int argc, char* argv[]){
-    int Ret =0, status;
+    int Ret =0, exit_status = 0, cpid =0;
     Ret = fork();
 
     if(Ret == 0)
@@ -21,8 +21,8 @@ int main(int argc, char* argv[]){
     else{
         //Parent Process
         printf("This is parent Process with PID: %d\n",getpid());
-        waitpid(Ret, &status,0);
-        printf("Child process status %d\n",status);
+        cpid = wait(&exit_status);
+        printf("Child process with PID %d terminated with exit status %d\n",cpid,exit_status);
      //   WIFEXITED(status);
        // printf("Child process status %d\n",status);
     }
