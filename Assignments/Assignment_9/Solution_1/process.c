@@ -33,7 +33,7 @@ int main()
     while((entrty = readdir(dp)) != NULL){
         strcpy(fName,entrty->d_name);
         //write(0,fName,sizeof(fName));
-        write(fd,fName,sizeof(fName));
+        write(fd,fName,strlen(fName));
         memset(fName,0,sizeof(fName));
         write(fd,"\n",1);
     }
