@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
-//Function definations of thread callback fucntions
+// Function definations of thread callback fucntions
 
 void *Thread_1(void *ptr1)
 {
@@ -39,8 +39,7 @@ void *Thread_4(void *ptr4)
     pthread_exit(NULL);
 }
 
-
-//Create array of function pointer to store addresses of all callback fucntions
+// Create array of function pointer to store addresses of all callback fucntions
 void *(*fptr[4])(void *) = {Thread_1, Thread_2, Thread_3, Thread_4};
 
 int main()
@@ -49,7 +48,7 @@ int main()
     int i = 0;
     pthread_t PID[4] = {0};
 
-    //for loop for cerating 4 threads
+    // for loop for cerating 4 threads
 
     for (i = 0; i < 4; i++)
     {
@@ -62,6 +61,6 @@ int main()
         pthread_join(PID[i], NULL); // tell main thread to wait until last thread gets terminated
     }
 
-    pthread_exit(NULL);//Exit main thread
+    pthread_exit(NULL); // Exit main thread
     return 0;
 }
