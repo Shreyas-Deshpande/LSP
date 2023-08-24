@@ -90,7 +90,7 @@ int main(int argc, char *argv[])
     region over which, the file is mappped.
     */
     char *addr = NULL;
-    off_t pa_offset, offset = 0;
+    off_t pa_offset, offset = 5;
     int length = 15;
 
     if (argc != 2)
@@ -114,6 +114,8 @@ int main(int argc, char *argv[])
 
     pa_offset = offset & ~(sysconf(_SC_PAGE_SIZE) - 1);
 
+    printf("pa_oofset %ld\n",pa_offset);
+
     addr = mmap(NULL,length,PROT_READ,MAP_SHARED,fd,pa_offset);
 
     if(addr == MAP_FAILED){
@@ -121,7 +123,7 @@ int main(int argc, char *argv[])
     }
 
     printf("Mapped file contents are:\n");
-    for(i=0;i<length;i++){
+    for(i=offset;i<length;i++){
         printf("%c",addr[i]);
     }
 
