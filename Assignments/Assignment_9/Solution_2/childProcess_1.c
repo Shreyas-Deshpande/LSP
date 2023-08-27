@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include<string.h>
-
+#include <string.h>
 
 #define IP_FILE "Demo.txt"
 #define OP_FILE "Count.txt"
@@ -26,16 +25,16 @@ int main()
                 iCount++;
             }
         }
-        //printf("Read %d bytes from file\n", ret);
+        // printf("Read %d bytes from file\n", ret);
     }
 
-    memset(Buff,0,sizeof(Buff));
-    ret =0;
+    memset(Buff, 0, sizeof(Buff));
+    ret = 0;
     close(fd1);
-    
-    ret = sprintf(Buff,"Number of capital letters in %s is: %d\n",IP_FILE,iCount);
 
-    fd2 = open(OP_FILE,O_RDWR|O_APPEND);
-    write(fd2,Buff,ret);
+    ret = sprintf(Buff, "Number of capital letters in %s is: %d\n", IP_FILE, iCount);
+
+    fd2 = open(OP_FILE, O_RDWR | O_APPEND);
+    write(fd2, Buff, ret);
     return 0;
 }

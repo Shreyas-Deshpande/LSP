@@ -1,6 +1,6 @@
 /*
 *   Write a program which creates single thread,
-*   We ahve to pass a parameter to that thread from main thread
+*   We have to pass a parameter to that thread from main thread
 */
 
 #include<stdio.h>
