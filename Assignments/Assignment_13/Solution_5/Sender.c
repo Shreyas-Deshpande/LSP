@@ -30,6 +30,7 @@ int main(int argc, char *argv[])
     printf("[Sender Process]: Sending SIGINT to receiver process\n");
     kill(PID, SIGINT);
     sleep(1);
+    printf("[Sender Process]: Sending SIGKILL to receiver process\n");
     kill(PID,SIGKILL);
 
     return 0;
