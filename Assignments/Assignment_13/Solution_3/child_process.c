@@ -71,6 +71,13 @@ int main()
     printf("Child Process is Running now.\n");
 
     signal(SIGINT, signal_handler);
+    signal(SIGUSR1,signal_handler);
+    signal(SIGUSR2,signal_handler);
+    signal(SIGQUIT,signal_handler);
+    signal(SIGHUP,signal_handler);
+    signal(SIGTRAP,signal_handler);
+    signal(SIGILL,signal_handler);
+    
 
     for (;;)
         pause();
