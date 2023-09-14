@@ -1,6 +1,6 @@
 
 all:
-	@gcc Solution_1.c -o solution_1
+	@gcc Solution_1.c Helper.c -o solution_1
 
 run: 
 	@./solution_1 ${NAME}
